@@ -1,0 +1,9 @@
+body {
+    display: flex;
+}
+
+.background-image {
+    width: 35vw;
+    height: 100vh;
+    object-fit: cover;
+}
