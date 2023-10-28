@@ -1,9 +1,46 @@
-body {
-    display: flex;
+@font-face {
+    font-family: "norse-bold";
+    src: url("fonts/Norse-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
 }
 
-.background-image {
-    width: 35vw;
+body {
+    display: flex;
+    margin: 0;
+}
+
+.left-side {
+    width: 25vw;
     height: 100vh;
-    object-fit: cover;
+    background-image: url("images/green-leaf.jpg");
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0;
+    font-family: "norse-bold";
+    font-size: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.footer a {
+    color: white;
 }
