@@ -11,7 +11,7 @@ body {
 }
 
 .left-side {
-    width: 25vw;
+    width: 40vw;
     height: 100vh;
     background-image: url("images/green-leaf.jpg");
     background-size: cover;
@@ -43,4 +43,29 @@ img {
 
 .footer a {
     color: white;
+}
+
+.right-side {
+    background-color: rgb(243, 243, 243);
+    width: 60vw;
+    height: 100vh;
+}
+
+.header-text {
+    width: 720px;
+    height: auto;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.header-text p {
+    margin: 0;
+}
+
+.header-text .text-1 {
+    margin: 140px 0 0;
+}
+
+.header-text .text-2 {
+    margin: 25px 0 55px;
 }
