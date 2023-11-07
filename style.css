@@ -52,9 +52,10 @@ img {
 }
 
 .header-text {
-    width: 720px;
+    width: 740px;
     height: auto;
-    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
     font-weight: bold;
 }
 
