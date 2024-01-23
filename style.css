@@ -10,6 +10,15 @@ body {
     margin: 0;
 }
 
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    outline: none;
+}
+
 .left-side {
     width: 40vw;
     height: 100vh;
@@ -49,12 +58,12 @@ img {
     background-color: rgb(243, 243, 243);
     width: 60vw;
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-text {
     width: 740px;
     height: auto;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: bold;
 }
@@ -69,4 +78,60 @@ img {
 
 .header-text .text-2 {
     margin: 25px 0 55px;
+}
+
+.form-section {
+    background-color: white;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #4975ce;
+    box-shadow: 3px 3px 3px rgb(214, 214, 214);
+}
+
+.form-section {
+    width: 60vw;
+    height: auto;
+}
+
+#info-form {
+    width: 650px;
+}
+
+fieldset {
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.form-section label {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(92, 92, 92);
+    letter-spacing: 1px;
+}
+
+.form-section input {
+    padding: 5px 10px;
+}
+
+#info-form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#info-form .contact-element {
+    padding: 0 70px 20px 0;
+}
+
+.error-message {
+    color: rgb(204, 33, 33);
+    font-size: 12px;
 }
