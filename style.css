@@ -148,10 +148,6 @@ fieldset {
     font-size: 12px;
 }
 
-.error-message:valid {
-    visibility: hidden;
-}
-
 input[type="password"]:invalid {
     border: 1px solid rgb(204, 33, 33);
 }
