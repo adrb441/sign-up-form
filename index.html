@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Sign-up Form</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head> 
     <body>
         <div class="left-side">
@@ -47,16 +48,19 @@
                         </div>
                         <div class="contact-element">
                             <div><label for="phone-number">PHONE NUMBER</label></div>
-                            <div><input type="number" id="phone-number" name="phone-number" /></div>
+                            <div><input type="tel" id="phone-number" name="phone-number"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                            </div>
                         </div>
                         <div class="contact-element">
                             <div><label for="pwd">PASSWORD</label></div>
-                            <div><input type="password" id="pwd" name="pwd"></div>
+                            <div><input type="password" id="pwd" name="pwd" required /></div>
                             <div class="error-message">* Passwords do not match</div>
                         </div>
                         <div class="contact-element">
                             <div><label for="confirm-pwd">CONFIRM PASSWORD</label></div>
-                            <div><input type="password" id="confirm-pwd" name="confirm-pwd"></div>
+                            <div><input type="password" id="confirm-pwd" name="confirm-pwd" required /></div>
+                            <div class="error-message"></div>
                         </div>
 
                     </fieldset>
@@ -64,7 +68,7 @@
             </div>
             <div class="account-action">
                 <div>
-                    <button type="submit" form="info-form">Submit</button>
+                    <button type="submit" form="info-form">Create Account</button>
                 </div>
                 <div>
                     <p>Already have an account?
