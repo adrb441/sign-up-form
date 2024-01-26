@@ -1,2 +1,2 @@
 # sign-up-form
-Sign up form for an imaginary service
+This is an example sign up form for an imaginary service. A form is displayed to the user with various input fields to be filled in with the user's information. Different input fields are used based on required information such as password or email address. Input fields are styled in a way to show which field is in focus. If the information required is missing or incorrect the input field will change color accordingly. Data inputted is validated before being sent to the server to minimize errors and save the user time.
