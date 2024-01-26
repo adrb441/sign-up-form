@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Sign-up Form</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </head> 
     <body>
         <div class="left-side">
@@ -36,30 +36,30 @@
                     <fieldset>
                         <div class="contact-element">
                             <div><label for="first-name">FIRST NAME</label></div>
-                            <div><input type="text" id="first-name" name="first-name" /></div>
+                            <div><input type="text" id="first-name" name="first-name" placeholder="John" required /></div>
                         </div>
                         <div class="contact-element">
                             <div><label for="last-name">LAST NAME</label></div>
-                            <div><input type="text" id="last-name" name="last-name" /></div>
+                            <div><input type="text" id="last-name" name="last-name" placeholder="Doe" required /></div>
                         </div>
                         <div class="contact-element">
                             <div><label for="e-mail">EMAIL</label></div>
-                            <div><input type="email" id="e-mail" name="e-mail" /></div>
+                            <div><input type="email" id="e-mail" name="e-mail" placeholder="username@site" required/></div>
                         </div>
                         <div class="contact-element">
                             <div><label for="phone-number">PHONE NUMBER</label></div>
                             <div><input type="tel" id="phone-number" name="phone-number"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required />
                             </div>
                         </div>
                         <div class="contact-element">
                             <div><label for="pwd">PASSWORD</label></div>
-                            <div><input type="password" id="pwd" name="pwd" required /></div>
+                            <div><input type="password" id="pwd" name="pwd" placeholder="password" required /></div>
                             <div class="error-message">* Passwords do not match</div>
                         </div>
                         <div class="contact-element">
                             <div><label for="confirm-pwd">CONFIRM PASSWORD</label></div>
-                            <div><input type="password" id="confirm-pwd" name="confirm-pwd" required /></div>
+                            <div><input type="password" id="confirm-pwd" name="confirm-pwd" placeholder="password" required /></div>
                             <div class="error-message"></div>
                         </div>
 
@@ -68,7 +68,7 @@
             </div>
             <div class="account-action">
                 <div>
-                    <button type="submit" form="info-form">Create Account</button>
+                    <button type="submit" form="info-form" id="create-button">Create Account</button>
                 </div>
                 <div>
                     <p>Already have an account?
