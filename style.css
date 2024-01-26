@@ -17,6 +17,10 @@ textarea {
     font-family: inherit;
     font-size: 100%;
     outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-style: none;
 }
 
 .left-side {
@@ -66,6 +70,7 @@ img {
     height: auto;
     font-size: 24px;
     font-weight: bold;
+    padding: 0 0 0 45px;
 }
 
 .header-text p {
@@ -80,14 +85,21 @@ img {
     margin: 25px 0 55px;
 }
 
+h2 {
+    margin: 0 0 20px 0;
+}
+
 .form-section {
     background-color: white;
+    box-shadow: 4px 5px 6px rgb(199, 199, 199);
+    padding: 15px 0 0 45px;
 }
 
 input {
     border: 1px solid #E5E7EB;
     border-radius: 4px;
     padding: 4px;
+    width: 280px;
 }
 
 input:focus {
@@ -97,12 +109,12 @@ input:focus {
 }
 
 .form-section {
-    width: 60vw;
+    width: auto;
     height: auto;
 }
 
 #info-form {
-    width: 650px;
+    width: 700px;
 }
 
 fieldset {
@@ -119,7 +131,7 @@ fieldset {
 }
 
 .form-section input {
-    padding: 5px 10px;
+    padding: 7px 10px 4px;
 }
 
 #info-form fieldset {
@@ -134,4 +146,41 @@ fieldset {
 .error-message {
     color: rgb(204, 33, 33);
     font-size: 12px;
+}
+
+.error-message:valid {
+    visibility: hidden;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid rgb(204, 33, 33);
+}
+
+.contact-element input:invalid {
+    border: 1px solid rgb(204, 33, 33);
+}
+
+.account-action {
+    padding: 40px 0 0 45px;
+}
+
+.account-action button {
+    color: #FFF;
+    background-color: #596D48;
+    padding: 15px 60px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 4px 4px 4px rgb(214, 214, 214);
+}
+
+.account-action p {
+    margin: 0;
+    padding: 35px 0;
+}
+
+.account-action a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #596D48;
 }
